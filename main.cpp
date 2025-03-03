@@ -4,7 +4,6 @@
 #include <string>
 #include <sstream>
 #include <cstdlib>
-#include <sstream>
 
 const char* sig = "0F 84 50 01 00 00 C7 44";
 
@@ -37,7 +36,7 @@ void parse_signature(const char* sig) {
 vector<uint8_t> read_file(const char* filename) {
     ifstream file(filename, ios::binary | ios::ate);
     if (!file.is_open()) {
-        cerr << "Error opening file: " << filename << endl;
+        cout << "Error opening file: " << filename << endl;
         return {};
     }
 
@@ -46,7 +45,7 @@ vector<uint8_t> read_file(const char* filename) {
 
     vector<uint8_t> buffer(size);
     if (!file.read(reinterpret_cast<char*>(buffer.data()), size)) {
-        cerr << "Error reading file: " << filename << endl;
+        cout << "Error reading file: " << filename << endl;
         return {};
     }
     return buffer;
@@ -95,6 +94,7 @@ int main() {
     vector<uint8_t> file_buffer = read_file(name);
 
     if (file_buffer.empty()) {
+        cin.get();
         return 1;
     }
 
