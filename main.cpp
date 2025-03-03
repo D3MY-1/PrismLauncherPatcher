@@ -79,7 +79,7 @@ intptr_t find_signature(const vector<uint8_t>& buffer) {
 
 void Patch(vector<uint8_t>& binary,intptr_t offset, uint8_t* patch,size_t patchSize)
 {
-    if (patchSize <= 0) { cout << "Patch size < 0/n"; return; }
+    if (patchSize <= 0) { cout << "Patch size < 0\n"; return; }
 
     for (int i = 0; i < patchSize; i++)
     {
@@ -120,10 +120,10 @@ int main() {
         pFile.write(reinterpret_cast<char*>(file_buffer.data()), file_buffer.size());
 
         pFile.close();
-        cout << "Successfully created file " << str << '/n';
+        cout << "Successfully created file " << str << '\n';
     }
     else
-        cout << "Failed to create file /n";
+        cout << "Failed to create file \n";
 
     cout << "Press enter to continue...";
 
