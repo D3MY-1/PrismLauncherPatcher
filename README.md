@@ -19,4 +19,11 @@ A new executable file named `prismlauncher_patched.exe` will be created in the s
 2.  **Placement:** Place the downloaded `PrismLauncherPatcher.exe` file in the **same directory as your Prism Launcher's `prismlauncher.exe` file.**
 3.  **Execution:** Run the `PrismLauncherPatcher.exe`. The patcher will automatically detect your Prism Launcher installation type and apply the correct patch.
 4.  **Result:** A new file named `prismlauncher_patched.exe` will be created in the same directory. This is your patched version of Prism Launcher.
-5.  **Usage:** Launch Prism Launcher using `prismlauncher_patched.exe` instead of `prismlauncher.exe`. You should now be able to create offline accounts within the patched application.
+
+
+**Launching the Game:**
+
+1.  **Run the Patched Launcher:** Launch Prism Launcher by running `prismlauncher_patched.exe` instead of `prismlauncher.exe`.
+2.  **Create Offline Account:** You should now be able to create an offline account within the patched application.
+3.  **Launch Instance (Potential Microsoft Account Prompt):** When launching a Minecraft instance, you might encounter a window with the message: "`In order to play Minecraft, you must have at least one Microsoft account that owns Minecraft logged in. Would you like to open the account manager to add an account now?`"
+4.  **Workaround:** If you see this prompt, simply click the **"Yes"** button on the prompt window and then **close the PrismLauncher Account manager window** that appears. Minecraft should then proceed to launch correctly.
